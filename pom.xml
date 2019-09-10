@@ -21,7 +21,7 @@
   </parent>
   <groupId>org.spark-project.hive</groupId>
   <artifactId>hive</artifactId>
-  <version>1.2.1.spark2</version>
+  <version>1.2.1.spark2.awsglue</version>
   <packaging>pom</packaging>
 
   <!-- See http://central.sonatype.org/pages/apache-maven.html -->
@@ -737,6 +737,7 @@
     <plugins>
 
       <!-- OSS sonatype requires GPG signatures - http://blog.sonatype.com/2010/01/how-to-generate-pgp-signatures-with-maven/#.VbrkazBVjGM-->
+<!-- not publishing to sonatype
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-gpg-plugin</artifactId>
@@ -750,7 +751,7 @@
           </execution>
         </executions>
       </plugin>
-
+-->
       <!-- plugins are always listed in sorted order by groupId, artifectId -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
